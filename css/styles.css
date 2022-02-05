@@ -17,75 +17,195 @@
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-}
 
-/* Заголовки на странице */
-/* фон для того, чтобы было видно заголовок (потом уберу) */
-.page-caption {
-  color: var(--primary-white-color);
-  background-color: #000000;
+  font-family: Roboto, sans-serif;
 }
-
-.page-subtitle {
-  color: var(--secondary-color);
+.list {
+  list-style: none;
 }
-
-/* Логотип */
-.accent {
+/* Логотип в шапке */
+.accent-logo {
   color: var(--accent-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
-.accent:hover {
+.accent-logo:hover {
   color: var(--logo-color);
 }
 .logo {
   color: var(--logo-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .logo:hover {
   color: var(--accent-color);
 }
-.footer-logo {
-  color: var(--primary-white-color);
-}
-.footer-logo:hover {
-  color: var(--accent-color);
-}
 
 /* Навигация сайта */
-.site-nav .link {
+.site-nav .link,
+.site-nav .link-current {
   color: var(--secondary-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-.link-current {
+.site-nav .link-current {
   color: var(--accent-color);
 }
-/* Контакты и адрес */
+.site-nav .link-current:hover,
+.site-nav .link-current:focus {
+  color: var(--secondary-color);
+}
+/* Контакты */
 .contacts a {
   color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .contacts a:hover,
 .contacts a:focus {
   color: var(--accent-color);
 }
+
+/* Герой */
+/* фон для того, чтобы было видно заголовок, потом уберу*/
+.page-caption {
+  color: var(--primary-white-color);
+  background-color: #000000;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+/* Кнопка "Заказать услугу" */
+.primary-button {
+  color: var(--primary-white-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+}
+.primary-button:hover,
+.primary-button:focus {
+  color: var(--secondary-color);
+}
+/* Наши особенности */
+.page-subtitle {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Наша сфера деятельности */
+.page-subject {
+  color: var(--secondary-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Наша команда */
+.section-team {
+  color: var(--secondary-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19px;
+  letter-spacing: 0.03em;
+}
+
+.aside-team {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19px;
+  letter-spacing: 0.03em;
+}
+
+/* Футер */
+/* Логотип в футере */
+.blue-logo {
+  color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.blue-logo:hover,
+.blue-logo:focus {
+  color: var(--secondary-color);
+}
+.footer-logo {
+  color: var(--primary-white-color);
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.footer-logo:hover {
+  color: var(--secondary-color);
+}
+/* Адрес */
+.location {
+  color: var(--primary-white-color);
+  background-color: var(--secondary-color);
+
+  font: weight 400px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* Почта и телефон */
 .footer-contacts a {
   color: var(--contacts-color);
   background-color: var(--secondary-color);
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .footer-contacts a:hover,
 .footer-contacts a:focus {
   color: var(--accent-color);
-}
-.location {
-  color: var(--primary-white-color);
-  background-color: var(--secondary-color);
-}
-/* Кнопка "Заказать услугу" */
-.button {
-  color: var(--primary-white-color);
-}
-.button:hover,
-.button:focus {
-  color: var(--secondary-color);
 }
