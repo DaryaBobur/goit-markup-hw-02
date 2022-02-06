@@ -32,11 +32,12 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
+
 .accent-logo:hover {
   color: var(--logo-color);
 }
+
 .logo {
   color: var(--logo-color);
 
@@ -45,8 +46,8 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-decoration: none;
 }
+
 .logo:hover {
   color: var(--accent-color);
 }
@@ -208,4 +209,35 @@ body {
 .footer-contacts a:hover,
 .footer-contacts a:focus {
   color: var(--accent-color);
+}
+
+/* Страница Портфолио */
+/* Фильтр*/
+.items-btn,
+.items-btn-current {
+  color: var(--secondary-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+.items-btn:hover,
+.items-btn:focus {
+  color: var(--primary-white-color);
+}
+/* Контент портфолио */
+.headline {
+  color: var(--secondary-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.list-block {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
