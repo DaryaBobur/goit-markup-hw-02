@@ -15,8 +15,8 @@
   --primary-white-color: #ffffff;
   --contacts-color: rgba(255, 255, 255, 0.6);
   --bgc-btn: #188ce8;
-  --primary-bg-btn: #f5f4fa;
-  --footer-bg: #2f303a;
+  --color-bg-btn-section: #f5f4fa;
+  --color-bg: #2f303a;
   /* Шрифты макета */
   --primary-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
@@ -57,7 +57,8 @@ body {
 .logo:focus {
   color: var(--accent-color);
 }
-.link-logo {
+.link-logo,
+.link {
   text-decoration: none;
 }
 
@@ -94,10 +95,11 @@ body {
 }
 
 /* Герой */
-/* фон для того, чтобы было видно заголовок, потом уберу*/
+.hero {
+  background-color: var(--color-bg);
+}
 .page-caption {
   color: var(--primary-white-color);
-  background-color: #000000;
 
   font-weight: 900;
   font-size: 44px;
@@ -146,6 +148,9 @@ body {
 }
 
 /* Наша команда */
+.team {
+  background-color: var(--color-bg-btn-section);
+}
 .section-team {
   color: var(--secondary-color);
 
@@ -162,7 +167,7 @@ body {
 /* Футер */
 /* Логотип в футере */
 .footer {
-  background-color: var(--footer-bg);
+  background-color: var(--color-bg);
 }
 .footer-logo {
   color: var(--primary-white-color);
@@ -178,14 +183,14 @@ body {
 /* Адрес */
 .location {
   color: var(--primary-white-color);
-
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
 /* Почта и телефон */
 .footer-contacts {
   color: var(--contacts-color);
-
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 
@@ -201,7 +206,7 @@ body {
 
 .items-btn {
   color: var(--secondary-color);
-  background-color: var(--primary-bg-btn);
+  background-color: var(--color-bg-btn-section);
 
   font-family: inherit;
 
@@ -228,6 +233,7 @@ body {
   letter-spacing: 0.06em;
 }
 .list-block {
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
 }
